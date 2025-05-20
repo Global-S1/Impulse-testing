@@ -13,8 +13,8 @@ export class LoginPage {
     this.loginButton = page.locator('.login-form_btn__rV780');
   }
 
-  async goto() {
-    await this.page.goto('/r/login');
+  async goto(pageUrl: string = '/r/login') {
+    await this.page.goto(pageUrl);
   }
 
   async login(email: string, password: string) {

@@ -1,0 +1,125 @@
+{
+  "cookies": [
+    {
+      "name": "googtrans",
+      "value": "/es/es",
+      "domain": ".impulseworld.pro",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.892059663.1747766615",
+      "domain": ".impulseworld.pro",
+      "path": "/",
+      "expires": 1755542615,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1800944754.1747766615",
+      "domain": ".impulseworld.pro",
+      "path": "/",
+      "expires": 1782326634.209658,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ar_debug",
+      "value": "1",
+      "domain": ".www.google-analytics.com",
+      "path": "/",
+      "expires": 1755542639.662937,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "next-auth.csrf-token",
+      "value": "f8ed5c5c656b23bdd1e0b647f1e2860938b89658e772c9d2cb44cdfb9d0407be%7C62fde656ccafe55997add43e8386d12c6283de2c50839bcaf35667ac0e04b0e7",
+      "domain": "dev.impulseworld.pro",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "intercom-device-id-w5gx46t6",
+      "value": "729954c5-5363-4589-abb6-22a4af7c10ed",
+      "domain": ".impulseworld.pro",
+      "path": "/",
+      "expires": 1771096640,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_DEJ2HNE704",
+      "value": "GS2.1.s1747766615$o1$g1$t1747766639$j36$l0$h1504509688$d7Ni8t-hd5qwBbR8SHCu8jagcJGYtbjiFgQ",
+      "domain": ".impulseworld.pro",
+      "path": "/",
+      "expires": 1782326639.533145,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-next-auth.callback-url",
+      "value": "https%3A%2F%2Fdev.impulseworld.pro%2Fr%2Fchange-password",
+      "domain": "dev.impulseworld.pro",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "intercom-session-w5gx46t6",
+      "value": "eTdzR3hXbTc0d2FKN09CZzB5N3lpcTVYNURxcEpGWjJZK0xzM3lVZndnbitVOFQzeU93WVc3Tm1obGhlWDU3WWhVZ0NxY3JoYmlJVFpFYVZDZmgwRlErM2hPbmM0aFY0RmxwUGlOQmQ1UWc9LS1hLzdtS2J6VW51ZDliWXlWMWhQRUFBPT0=--c6380ed50b8db3a5f9df629930ac6357ba09e129",
+      "domain": ".impulseworld.pro",
+      "path": "/",
+      "expires": 1748371440,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://dev.impulseworld.pro",
+      "localStorage": [
+        {
+          "name": "nextauth.message",
+          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"signout\"},\"timestamp\":1747766639}"
+        },
+        {
+          "name": "__mpq_fd1e23e27ffa85e2f4ccb9648c356a7e_ev",
+          "value": "[]"
+        },
+        {
+          "name": "mp_fd1e23e27ffa85e2f4ccb9648c356a7e_mixpanel",
+          "value": "{\"distinct_id\": \"$device:196ef021bfcee1-00bc483a61c8de8-416366e-e1000-196ef021bfcee1\",\"$device_id\": \"196ef021bfcee1-00bc483a61c8de8-416366e-e1000-196ef021bfcee1\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\",\"__mps\": {},\"__mpso\": {},\"__mpus\": {},\"__mpa\": {},\"__mpu\": {},\"__mpr\": [],\"__mpap\": []}"
+        },
+        {
+          "name": "__mpq_fd1e23e27ffa85e2f4ccb9648c356a7e_pp",
+          "value": "[]"
+        },
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"creationTimeMs\":1747766615098},\"expires\":1755542615098}}"
+        },
+        {
+          "name": "intercom.intercom-state-w5gx46t6",
+          "value": "{\"app\":{\"openConfig\":{\"layout\":\"default\",\"unifiedStyling\":true,\"openTo\":\"home\",\"spaces\":[{\"type\":\"home\",\"label\":\"Inicio\",\"navigationLabel\":\"Inicio\",\"badge\":null},{\"type\":\"messages\",\"label\":\"Mensajes\",\"navigationLabel\":\"Mensajes\",\"badge\":null},{\"type\":\"help\",\"label\":\"Ayuda\",\"navigationLabel\":\"Ayuda\",\"badge\":null}],\"userHasReceivedChecklists\":false,\"userHasLiveNewsfeed\":false,\"userHasTickets\":false},\"selfServeSuggestionsMatch\":false,\"name\":\"Support Team\",\"features\":{\"anonymousInboundMessages\":true,\"googleAnalytics\":false,\"hubspotInstalled\":false,\"inboundMessages\":true,\"marketoEnrichmentInstalled\":false,\"googleAnalytics4Integration\":true},\"helpCenterSiteUrl\":\"https://help.impulseworld.pro\",\"inboundConversationsDisabled\":false,\"isDeveloperWorkspace\":false,\"customGoogleAnalyticsTrackerId\":null},\"launcher\":{\"isLauncherEnabled\":true},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":false},\"launcherSettings\":{\"alignment\":\"right\",\"color\":\"#ffffff\",\"colorDark\":null,\"hasRequiredFeatures\":true,\"horizontalPadding\":20,\"instantBootEnabled\":true,\"launcherLogoUrl\":null,\"launcherLogoDarkUrl\":null,\"secondaryColor\":\"#000000\",\"secondaryColorDark\":null,\"showLauncher\":true,\"updatedAt\":1747761572,\"verticalPadding\":20,\"isLoading\":false},\"user\":{\"role\":\"user\",\"locale\":\"es\",\"hasConversations\":false},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{},\"lastOpenAtTimestamp\":1747766640719},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"isInitialized\":false,\"navigationQueue\":[]}}"
+        }
+      ]
+    }
+  ]
+}

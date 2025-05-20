@@ -5,6 +5,7 @@ import path from 'path';
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 export default defineConfig({
+  globalSetup: require.resolve('./src/setup/playwright.global-setup.ts'),
   testDir: './src/tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -12,7 +13,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   timeout: 600000,
-  
+
   use: {
     baseURL: process.env.BASE_URL,
     trace: 'on-first-retry',
@@ -24,17 +25,26 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: 'src/setup/sessions/storageState.chromium.json'
+      },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: {
+        ...devices['Desktop Firefox'],
+        storageState: 'src/setup/sessions/storageState.firefox.json'
+      },
     },
 
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: {
+        ...devices['Desktop Safari'],
+        storageState: 'src/setup/sessions/storageState.webkit.json'
+      },
     },
   ],
 });

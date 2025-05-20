@@ -5,28 +5,36 @@ import { LoginPage } from '../../../pages/auth/login.page';
 import { ChangePasswordPage } from '../../../pages/auth/change-password.page';
 import { validUser } from '../../../data/users';
 
-test('Registro y login exitoso', async ({ page }) => {
-    const inboxKitten = new InboxKittenPage(page);
-    const email = await inboxKitten.openAndGetEmail();
-    validUser.email = email;
+test.describe('Flujo de autenticación', () => {
+    console.log('Autenticación');
+    test.use({ storageState: { cookies: [], origins: [] } });
 
-    const registerPage = new RegisterPage(page);
-    await registerPage.goto();
-    await registerPage.fillForm(validUser);
-    await registerPage.submit();
-    await registerPage.expectSuccessMessage();
+    test('Registro exitoso', async ({ page }) => {
+        const inboxKitten = new InboxKittenPage(page);
+        const email = await inboxKitten.openAndGetEmail();
+        validUser.email = email;
 
-    await inboxKitten.gotoInbox(validUser.email);
-    await inboxKitten.openRegistrationEmail('Registro de Usuario');
-    const password = await inboxKitten.getUserAndPasswordFromEmail(validUser.email);
-    validUser.password = password;
+        const registerPage = new RegisterPage(page);
+        await registerPage.goto();
+        await registerPage.fillForm(validUser);
+        await registerPage.submit();
+        await registerPage.expectSuccessMessage();
 
-    const loginPage = new LoginPage(page);
-    await loginPage.goto();
-    await loginPage.login(validUser.email, validUser.password);
+        await inboxKitten.gotoInbox(validUser.email);
+        await inboxKitten.openRegistrationEmail('Registro de Usuario');
+        const password = await inboxKitten.getUserAndPasswordFromEmail(validUser.email);
+        validUser.password = password;
+    });
 
-    const changePasswordPage = new ChangePasswordPage(page);
-    await changePasswordPage.changePassword(validUser.password, validUser.newPasword);
+    test('Login exitoso', async ({page})=>{
+        const loginPage = new LoginPage(page);
+        await loginPage.goto();
+        await loginPage.login(validUser.email, validUser.password);
 
-    await loginPage.login(validUser.email, validUser.newPasword);
+        const changePasswordPage = new ChangePasswordPage(page);
+        await changePasswordPage.changePassword(validUser.password, validUser.newPasword);
+
+        await loginPage.login(validUser.email, validUser.newPasword);
+    })
 });
+

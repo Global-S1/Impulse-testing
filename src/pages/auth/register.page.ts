@@ -27,8 +27,8 @@ export class RegisterPage {
         this.submitButton = page.getByRole('button', { name: 'REGISTRARME' });
     }
 
-    async goto() {
-        await this.page.goto('/r/register');
+    async goto(pageUrl: string = '/r/register') {
+        await this.page.goto(pageUrl);
     }
 
     async fillForm({
