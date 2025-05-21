@@ -5,7 +5,7 @@ import path from 'path';
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 export default defineConfig({
-  globalSetup: require.resolve('./src/setup/playwright.global-setup.ts'),
+  //globalSetup: require.resolve('./src/setup/playwright.global-setup.ts'),
   testDir: './src',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -27,7 +27,7 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        storageState: 'src/setup/sessions/storageState.chromium.json'
+        storageState: 'src/setup/sessions/storageState.chromium.json',
       },
     },
 
@@ -35,7 +35,7 @@ export default defineConfig({
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
-        storageState: 'src/setup/sessions/storageState.firefox.json'
+        storageState: 'src/setup/sessions/storageState.firefox.json',
       },
     },
 
@@ -43,7 +43,7 @@ export default defineConfig({
       name: 'webkit',
       use: {
         ...devices['Desktop Safari'],
-        storageState: 'src/setup/sessions/storageState.webkit.json'
+        storageState: 'src/setup/sessions/storageState.webkit.json',
       },
     },
   ],

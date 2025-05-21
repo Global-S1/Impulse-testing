@@ -7,9 +7,8 @@ import { SidebarPage } from '../../../pages/Sidebar.page';
 
 //test.use({ storageState: 'src/setup/sessions/storageState.chromium.json' });
 test('Compra de un desafío', async ({ page }) => {
-    //await registerAndLogin(page, validUser.newPasword);
+    await registerAndLogin(page, validUser.newPasword);
 
-    await page.goto('/');
     const ordersPage = new OrdersPage(page);
     const ConfigurePage = await ordersPage.clickBtnNewChallenge();
     const challengeConfigurePage = new OrdersPage(ConfigurePage);

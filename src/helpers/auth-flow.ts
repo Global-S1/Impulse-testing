@@ -15,7 +15,7 @@ export async function registerAndLogin(context: Page, password: string) {
 
   const registerPage = new RegisterPage(page);
   const baseURL = process.env.BASE_URL;
-  await registerPage.goto(`${baseURL}/r/register`);
+  await registerPage.goto(`${baseURL!.trim()}/r/register`);
   await registerPage.fillForm({
   firstName: 'Test',
   lastName: 'User',
@@ -34,12 +34,13 @@ export async function registerAndLogin(context: Page, password: string) {
   const tempPassword = await inboxKitten.getUserAndPasswordFromEmail(email);
 
   const loginPage = new LoginPage(page);
-  await loginPage.goto(`${baseURL}/r/login`);
+  await loginPage.goto(`${baseURL!.trim()}/r/login`);
   await loginPage.login(email, tempPassword);
 
   const changePasswordPage = new ChangePasswordPage(page);
   await changePasswordPage.changePassword(tempPassword, password);
-
+  
+  await page.waitForTimeout(2000);
   await loginPage.login(email, password);
 
   return { email, password };
