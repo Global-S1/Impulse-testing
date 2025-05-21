@@ -7,7 +7,7 @@ import { validUser } from '../../../data/users';
 
 test.describe('Flujo de autenticación', () => {
     console.log('Autenticación');
-    test.use({ storageState: { cookies: [], origins: [] } });
+    //test.use({ storageState: { cookies: [], origins: [] } });
 
     test('Registro exitoso', async ({ page }) => {
         const inboxKitten = new InboxKittenPage(page);
@@ -19,7 +19,7 @@ test.describe('Flujo de autenticación', () => {
         await registerPage.fillForm(validUser);
         await registerPage.submit();
         await registerPage.expectSuccessMessage();
-
+        await page.waitForTimeout(2000);
         await inboxKitten.gotoInbox(validUser.email);
         await inboxKitten.openRegistrationEmail('Registro de Usuario');
         const password = await inboxKitten.getUserAndPasswordFromEmail(validUser.email);
@@ -33,7 +33,7 @@ test.describe('Flujo de autenticación', () => {
 
         const changePasswordPage = new ChangePasswordPage(page);
         await changePasswordPage.changePassword(validUser.password, validUser.newPasword);
-
+        await page.waitForTimeout(2000);
         await loginPage.login(validUser.email, validUser.newPasword);
     })
 });

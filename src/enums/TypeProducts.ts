@@ -1,0 +1,1 @@
+export type typeProduct = 'CHALLENGE' | 'TOURNAMENT';

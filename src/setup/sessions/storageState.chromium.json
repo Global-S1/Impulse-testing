@@ -12,20 +12,20 @@
     },
     {
       "name": "_gcl_au",
-      "value": "1.1.892059663.1747766615",
+      "value": "1.1.1767747137.1747848987",
       "domain": ".impulseworld.pro",
       "path": "/",
-      "expires": 1755542615,
+      "expires": 1755624987,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga",
-      "value": "GA1.1.1800944754.1747766615",
+      "value": "GA1.1.123068059.1747848987",
       "domain": ".impulseworld.pro",
       "path": "/",
-      "expires": 1782326634.209658,
+      "expires": 1782409005.490234,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -35,14 +35,14 @@
       "value": "1",
       "domain": ".www.google-analytics.com",
       "path": "/",
-      "expires": 1755542639.662937,
+      "expires": 1755625010.733748,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "next-auth.csrf-token",
-      "value": "f8ed5c5c656b23bdd1e0b647f1e2860938b89658e772c9d2cb44cdfb9d0407be%7C62fde656ccafe55997add43e8386d12c6283de2c50839bcaf35667ac0e04b0e7",
+      "value": "db9480c930eeb1d3bd8eecf8fbc0f61538566c1341149979e77f6e81011506dd%7C12b460f31d21d4ef868afd039b681f189ca56aad3101a5620978271964e61e15",
       "domain": "dev.impulseworld.pro",
       "path": "/",
       "expires": -1,
@@ -52,20 +52,20 @@
     },
     {
       "name": "intercom-device-id-w5gx46t6",
-      "value": "729954c5-5363-4589-abb6-22a4af7c10ed",
+      "value": "9e9f8697-e0ab-4b66-9def-60ab54744f32",
       "domain": ".impulseworld.pro",
       "path": "/",
-      "expires": 1771096640,
+      "expires": 1771179011,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_DEJ2HNE704",
-      "value": "GS2.1.s1747766615$o1$g1$t1747766639$j36$l0$h1504509688$d7Ni8t-hd5qwBbR8SHCu8jagcJGYtbjiFgQ",
+      "value": "GS2.1.s1747848986$o1$g1$t1747849010$j36$l0$h1326026128$dgm3BvehBfHN866tt9k_2Ez9SslevreWs0A",
       "domain": ".impulseworld.pro",
       "path": "/",
-      "expires": 1782326639.533145,
+      "expires": 1782409010.617083,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -82,10 +82,10 @@
     },
     {
       "name": "intercom-session-w5gx46t6",
-      "value": "eTdzR3hXbTc0d2FKN09CZzB5N3lpcTVYNURxcEpGWjJZK0xzM3lVZndnbitVOFQzeU93WVc3Tm1obGhlWDU3WWhVZ0NxY3JoYmlJVFpFYVZDZmgwRlErM2hPbmM0aFY0RmxwUGlOQmQ1UWc9LS1hLzdtS2J6VW51ZDliWXlWMWhQRUFBPT0=--c6380ed50b8db3a5f9df629930ac6357ba09e129",
+      "value": "VGJqZjgxUDJxZGczTTdMUzJoRDdPakZHa1JHbWs3aWE0WGlNRnlwWm5qWHNPNy93VVNtb0QzYkxJa1JuV2JUR0h5RXBlaG5hWU1sb0UxdWVUeXVZc3FpeG1Md0lGQ054bWlHaE5qdkVRRlk9LS1HMk5yQW9rbGUrZzI2NkQxMkpKd013PT0=--9b20be6431e79dd59c1fff66ffb13fbb6072ecef",
       "domain": ".impulseworld.pro",
       "path": "/",
-      "expires": 1748371440,
+      "expires": 1748453810,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -97,7 +97,7 @@
       "localStorage": [
         {
           "name": "nextauth.message",
-          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"signout\"},\"timestamp\":1747766639}"
+          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"signout\"},\"timestamp\":1747849010}"
         },
         {
           "name": "__mpq_fd1e23e27ffa85e2f4ccb9648c356a7e_ev",
@@ -105,7 +105,7 @@
         },
         {
           "name": "mp_fd1e23e27ffa85e2f4ccb9648c356a7e_mixpanel",
-          "value": "{\"distinct_id\": \"$device:196ef021bfcee1-00bc483a61c8de8-416366e-e1000-196ef021bfcee1\",\"$device_id\": \"196ef021bfcee1-00bc483a61c8de8-416366e-e1000-196ef021bfcee1\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\",\"__mps\": {},\"__mpso\": {},\"__mpus\": {},\"__mpa\": {},\"__mpu\": {},\"__mpr\": [],\"__mpap\": []}"
+          "value": "{\"distinct_id\": \"$device:196f3eb00ceecd-0e9636e30e83cf8-416366e-e1000-196f3eb00ceecd\",\"$device_id\": \"196f3eb00ceecd-0e9636e30e83cf8-416366e-e1000-196f3eb00ceecd\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\",\"__mps\": {},\"__mpso\": {},\"__mpus\": {},\"__mpa\": {},\"__mpu\": {},\"__mpr\": [],\"__mpap\": []}"
         },
         {
           "name": "__mpq_fd1e23e27ffa85e2f4ccb9648c356a7e_pp",
@@ -113,11 +113,11 @@
         },
         {
           "name": "_gcl_ls",
-          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"creationTimeMs\":1747766615098},\"expires\":1755542615098}}"
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"creationTimeMs\":1747848986893},\"expires\":1755624986893}}"
         },
         {
           "name": "intercom.intercom-state-w5gx46t6",
-          "value": "{\"app\":{\"openConfig\":{\"layout\":\"default\",\"unifiedStyling\":true,\"openTo\":\"home\",\"spaces\":[{\"type\":\"home\",\"label\":\"Inicio\",\"navigationLabel\":\"Inicio\",\"badge\":null},{\"type\":\"messages\",\"label\":\"Mensajes\",\"navigationLabel\":\"Mensajes\",\"badge\":null},{\"type\":\"help\",\"label\":\"Ayuda\",\"navigationLabel\":\"Ayuda\",\"badge\":null}],\"userHasReceivedChecklists\":false,\"userHasLiveNewsfeed\":false,\"userHasTickets\":false},\"selfServeSuggestionsMatch\":false,\"name\":\"Support Team\",\"features\":{\"anonymousInboundMessages\":true,\"googleAnalytics\":false,\"hubspotInstalled\":false,\"inboundMessages\":true,\"marketoEnrichmentInstalled\":false,\"googleAnalytics4Integration\":true},\"helpCenterSiteUrl\":\"https://help.impulseworld.pro\",\"inboundConversationsDisabled\":false,\"isDeveloperWorkspace\":false,\"customGoogleAnalyticsTrackerId\":null},\"launcher\":{\"isLauncherEnabled\":true},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":false},\"launcherSettings\":{\"alignment\":\"right\",\"color\":\"#ffffff\",\"colorDark\":null,\"hasRequiredFeatures\":true,\"horizontalPadding\":20,\"instantBootEnabled\":true,\"launcherLogoUrl\":null,\"launcherLogoDarkUrl\":null,\"secondaryColor\":\"#000000\",\"secondaryColorDark\":null,\"showLauncher\":true,\"updatedAt\":1747761572,\"verticalPadding\":20,\"isLoading\":false},\"user\":{\"role\":\"user\",\"locale\":\"es\",\"hasConversations\":false},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{},\"lastOpenAtTimestamp\":1747766640719},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"isInitialized\":false,\"navigationQueue\":[]}}"
+          "value": "{\"app\":{\"openConfig\":{\"layout\":\"default\",\"unifiedStyling\":true,\"openTo\":\"home\",\"spaces\":[{\"type\":\"home\",\"label\":\"Inicio\",\"navigationLabel\":\"Inicio\",\"badge\":null},{\"type\":\"messages\",\"label\":\"Mensajes\",\"navigationLabel\":\"Mensajes\",\"badge\":null},{\"type\":\"help\",\"label\":\"Ayuda\",\"navigationLabel\":\"Ayuda\",\"badge\":null}],\"userHasReceivedChecklists\":false,\"userHasLiveNewsfeed\":false,\"userHasTickets\":false},\"selfServeSuggestionsMatch\":false,\"name\":\"Support Team\",\"features\":{\"anonymousInboundMessages\":true,\"googleAnalytics\":false,\"hubspotInstalled\":false,\"inboundMessages\":true,\"marketoEnrichmentInstalled\":false,\"googleAnalytics4Integration\":true},\"helpCenterSiteUrl\":\"https://help.impulseworld.pro\",\"inboundConversationsDisabled\":false,\"isDeveloperWorkspace\":false,\"customGoogleAnalyticsTrackerId\":null},\"launcher\":{\"isLauncherEnabled\":true},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":false},\"launcherSettings\":{\"alignment\":\"right\",\"color\":\"#ffffff\",\"colorDark\":null,\"hasRequiredFeatures\":true,\"horizontalPadding\":20,\"instantBootEnabled\":true,\"launcherLogoUrl\":null,\"launcherLogoDarkUrl\":null,\"secondaryColor\":\"#000000\",\"secondaryColorDark\":null,\"showLauncher\":true,\"updatedAt\":1747847850,\"verticalPadding\":20,\"isLoading\":false},\"user\":{\"role\":\"user\",\"locale\":\"es\",\"hasConversations\":false},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{},\"lastOpenAtTimestamp\":1747849011336},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"isInitialized\":false,\"navigationQueue\":[]}}"
         }
       ]
     }

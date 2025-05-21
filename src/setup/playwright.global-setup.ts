@@ -12,8 +12,10 @@ export default async function globalSetup() {
     console.log(`Get session for ${type.name()}`);
     const browser = await type.launch();
     const context = await browser.newContext();
-    await registerAndLogin(context, 'NuevaPassword123!');
+    const page = await context.newPage();
+    await registerAndLogin(page, 'TestUserForE2E*');
     await context.storageState({ path: statePath });
+    await page.waitForTimeout(3000);
     await browser.close();
   }
 }

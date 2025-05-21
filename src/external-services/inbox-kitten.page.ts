@@ -32,7 +32,6 @@ export class InboxKittenPage {
         await emailRow.first().click();
         return;
       }
-      // Refresca la bandeja
       await this.btnRefresh.click();
       await this.page.waitForTimeout(interval);
     }

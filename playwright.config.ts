@@ -6,11 +6,11 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 export default defineConfig({
   globalSetup: require.resolve('./src/setup/playwright.global-setup.ts'),
-  testDir: './src/tests',
+  testDir: './src',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  retries: process.env.CI ? 2 : 2,
+  workers: process.env.CI ? 3 : 3,
   reporter: 'html',
   timeout: 600000,
 

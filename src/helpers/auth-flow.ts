@@ -8,8 +8,8 @@ import dotenv from 'dotenv';
 import path from 'path';
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
-export async function registerAndLogin(context: BrowserContext, password: string) {
-  const page = await context.newPage();
+export async function registerAndLogin(context: Page, password: string) {
+  const page = context;
   const inboxKitten = new InboxKittenPage(page);
   const email = await inboxKitten.openAndGetEmail();
 
