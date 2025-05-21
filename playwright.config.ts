@@ -19,6 +19,7 @@ export default defineConfig({
     trace: 'on-first-retry',
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
+    //locale: 'es-ES',
   },
   outputDir: 'test-results/',
 

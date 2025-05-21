@@ -6,10 +6,20 @@ export class SidebarPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.ordersLink = this.page.getByRole('link').filter({ hasText: 'Orders' });
+        this.ordersLink = this.page.getByRole('link')
     }
 
     async clickOrdersLink() {
-      await this.ordersLink.click();
+      const keywords = [
+            'Orders',
+            'Órdenes',
+        ];
+        for (const keyword of keywords) {
+            const link = this.ordersLink.filter({ hasText: keyword });
+            if (await link.isVisible()) {
+                await link.click();
+                return;
+            }
+        }
     }
 }

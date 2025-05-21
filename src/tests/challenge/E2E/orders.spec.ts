@@ -4,21 +4,20 @@ import { registerAndLogin } from '../../../helpers/auth-flow';
 import { validUser } from '../../../data/users';
 import { validPaymentData } from '../../../data/payment';
 import { SidebarPage } from '../../../pages/Sidebar.page';
+import { typeProduct } from '../../../enums/TypeProducts';
 
-//test.use({ storageState: 'src/setup/sessions/storageState.chromium.json' });
 test('Compra de un desafío', async ({ page }) => {
     await registerAndLogin(page, validUser.newPasword);
 
     const ordersPage = new OrdersPage(page);
     const ConfigurePage = await ordersPage.clickBtnNewChallenge();
     const challengeConfigurePage = new OrdersPage(ConfigurePage);
-    await challengeConfigurePage.selectTypeProduct('CHALLENGE');
-    await challengeConfigurePage.selectNumberOfPhases(2);
-    await challengeConfigurePage.selectFundingAmount('10000');
-    await challengeConfigurePage.selectProfitTarget('10');
-    await challengeConfigurePage.selectDurationPhase1('60');
-    await challengeConfigurePage.selectPlatform('TRADELOCKER');
-    //await challengeConfigurePage.selectExtension('EXTENSION_30'); //EXTENSION_15 
+    await challengeConfigurePage.selectTypeProduct(process.env.CHALLENGE_TYPE_PRODUCT as typeProduct);
+    await challengeConfigurePage.selectNumberOfPhases(Number(process.env.CHALLENGE_NUMBER_OF_PHASES));
+    await challengeConfigurePage.selectFundingAmount(process.env.CHALLENGE_FUNDING_AMOUNT as string);
+    await challengeConfigurePage.selectProfitTarget(process.env.CHALLENGE_PROFIT_TARGET as string);
+    await challengeConfigurePage.selectDurationPhase1(process.env.CHALLENGE_DURATION_PHASE1 as string);
+    await challengeConfigurePage.selectPlatform(process.env.CHALLENGE_PLATFORM as string); 
     await challengeConfigurePage.clickBtnContinue();
     await challengeConfigurePage.completeOrderFlow();
 
