@@ -19,7 +19,7 @@ export default defineConfig({
     trace: 'on-first-retry',
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
-    //locale: 'es-ES',
+    locale: 'en-US',
   },
   outputDir: 'test-results/',
 
@@ -28,7 +28,7 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        storageState: 'src/setup/sessions/storageState.chromium.json',
+        //storageState: 'src/setup/sessions/storageState.chromium.json',
       },
     },
 
@@ -36,7 +36,7 @@ export default defineConfig({
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
-        storageState: 'src/setup/sessions/storageState.firefox.json',
+       //storageState: 'src/setup/sessions/storageState.firefox.json',
       },
     },
 
@@ -44,7 +44,7 @@ export default defineConfig({
       name: 'webkit',
       use: {
         ...devices['Desktop Safari'],
-        storageState: 'src/setup/sessions/storageState.webkit.json',
+        //storageState: 'src/setup/sessions/storageState.webkit.json',
       },
     },
   ],

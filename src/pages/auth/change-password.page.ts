@@ -16,6 +16,7 @@ export class ChangePasswordPage {
   }
 
   async changePassword(currentPassword: string, newPassword: string) {
+    await this.currentPasswordInput.waitFor({ state: 'visible' });
     await this.currentPasswordInput.fill(currentPassword);
     await this.newPasswordInput.fill(newPassword);
     await this.confirmPasswordInput.fill(newPassword);

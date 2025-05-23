@@ -8,7 +8,7 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.emailInput = page.locator('input[name="email"]');
+    this.emailInput = page.locator('input[type="email"]');
     this.passwordInput = page.locator('input[name="password"]');
     this.loginButton = page.locator('.login-form_btn__rV780');
   }
@@ -18,6 +18,7 @@ export class LoginPage {
   }
 
   async login(email: string, password: string) {
+    await this.emailInput.waitFor({ state: 'visible' });
     await this.emailInput.fill(email);
     await this.passwordInput.fill(password);
     await this.loginButton.click();

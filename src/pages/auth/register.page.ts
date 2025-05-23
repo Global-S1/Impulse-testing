@@ -24,7 +24,7 @@ export class RegisterPage {
         this.phone = page.locator('input[name="mobile"]');
         this.country = page.locator('select[name="countryId"]');
         this.city = page.locator('input[name="city"]');
-        this.submitButton = page.getByRole('button', { name: 'REGISTRARME' });
+        this.submitButton = page.locator('.register-form_btn__Tn_Qk');
     }
 
     async goto(pageUrl: string = '/r/register') {
@@ -50,6 +50,7 @@ export class RegisterPage {
         country: string;
         city: string;
     }) {
+        await this.firstName.waitFor({ state: 'visible' });
         await this.firstName.fill(firstName);
         await this.lastName.fill(lastName);
         await this.gender.selectOption({ label: gender });
@@ -67,8 +68,6 @@ export class RegisterPage {
     async expectSuccessMessage() {
         const keywords = [
             'Welcome',
-            'Bienvenido',
-            'registro ha sido exitoso',
             'registration has been successful',
         ];
 
