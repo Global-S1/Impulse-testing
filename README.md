@@ -1,5 +1,7 @@
 # Proyecto de Testing con Playwright
 
+## Instrucciones de uso: [instrucciones](doc/instructions.md).
+
 ## 📁 Estructura Base del Proyecto
 
 ```
